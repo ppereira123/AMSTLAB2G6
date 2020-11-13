@@ -19,12 +19,16 @@
             app:popupTheme="@style/Theme.AMSTG6.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
-
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/grupoFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:fab_labelStyle="@style/etiqueta"
-        app:fab_addButtonColorNormal="@color/purple_200"
-        app:fab_addButtonColorPressed="@color/teal_200">
+        app:fab_labelStyle="@drawable/fondo_eti_fab"
+        app:fab_addButtonColorNormal="@color/design_default_color_primary"
+        app:fab_addButtonColorPressed="@color/design_default_color_primary_dark">
+
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab1"
             android:layout_width="wrap_content"
