@@ -19,14 +19,39 @@
             app:popupTheme="@style/Theme.AMSTG6.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/grupoFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:fab_labelStyle="@style/etiqueta"
+        app:fab_addButtonColorNormal="@color/purple_200"
+        app:fab_addButtonColorPressed="@color/teal_200">
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@android:drawable/ic_dialog_map"
+            app:fab_size="normal"
+            app:fab_colorNormal="?attr/colorAccent"
+            app:fab_title="Boton 1"
+            app:fab_addButtonColorPressed="#E91E63"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@android:drawable/ic_media_play"
+            app:fab_size="normal"
+            app:fab_colorNormal="?attr/colorAccent"
+            app:fab_title="Boton 2"
+            app:fab_addButtonColorPressed="#03DA07"/>
+
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
 
     <include layout="@layout/content_main" />
 
