@@ -2,7 +2,8 @@ package com.example.amstg6;
 
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.getbase.floatingactionbutton.FloatingActionButton;
+import com.getbase.floatingactionbutton.FloatingActionsMenu;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,13 +23,26 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        final FloatingActionsMenu menuBotones= (FloatingActionsMenu) findViewById(R.id.grupoFab);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+       final FloatingActionButton fab1 = findViewById(R.id.fab1);
+       final FloatingActionButton fab2 = findViewById(R.id.fab2);
+        fab1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Cambia el titulo del grupoFab", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                fab1.setVisibility(View.INVISIBLE);
+                menuBotones.collapse();
+            }
+        });
+        fab2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Cambia el titulo del grupoFab", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+                fab1.setVisibility(View.INVISIBLE);
+                menuBotones.collapse();
             }
         });
     }
