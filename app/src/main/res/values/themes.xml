@@ -22,4 +22,9 @@
     <style name="Theme.AMSTG6.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.AMSTG6.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="etiqueta">
+        <item name="android:background">@drawable/fondo_eti_fab</item>
+        <item name="android:textColor">#fff</item>
+    </style>
 </resources>
