@@ -33,27 +33,27 @@
             android:id="@+id/fab1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="gotoMap"
+            app:fab_addButtonColorPressed="#E91E63"
+            app:fab_colorNormal="?attr/colorAccent"
             app:fab_icon="@android:drawable/ic_dialog_map"
             app:fab_size="normal"
-            app:fab_colorNormal="?attr/colorAccent"
-            app:fab_title="Boton 1"
-            app:fab_addButtonColorPressed="#E91E63"/>
+            app:fab_title="Boton 1" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="gotovideo"
+            app:fab_addButtonColorPressed="#03DA07"
+            app:fab_colorNormal="?attr/colorAccent"
             app:fab_icon="@android:drawable/ic_media_play"
             app:fab_size="normal"
-            app:fab_colorNormal="?attr/colorAccent"
-            app:fab_title="Boton 2"
-            app:fab_addButtonColorPressed="#03DA07"/>
+            app:fab_title="Boton 2" />
 
 
 
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
-
-    <include layout="@layout/content_main" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

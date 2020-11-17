@@ -1,5 +1,6 @@
 package com.example.amstg6;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.getbase.floatingactionbutton.FloatingActionButton;
@@ -23,28 +24,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        final FloatingActionsMenu menuBotones= (FloatingActionsMenu) findViewById(R.id.grupoFab);
 
-       final FloatingActionButton fab1 = findViewById(R.id.fab1);
-       final FloatingActionButton fab2 = findViewById(R.id.fab2);
-        fab1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Cambia el titulo del grupoFab", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                fab1.setVisibility(View.INVISIBLE);
-                menuBotones.collapse();
-            }
-        });
-        fab2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Cambia el titulo del grupoFab", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                fab1.setVisibility(View.INVISIBLE);
-                menuBotones.collapse();
-            }
-        });
+    }
+
+    public void gotovideo(View view) {
+        Intent intent = new Intent(this, VideoViewAct.class);
+        startActivity(intent);
+    }
+
+    public void gotoMap(View view) {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
     }
 
     @Override

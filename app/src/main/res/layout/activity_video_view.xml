@@ -6,26 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".VideoViewAct">
 
-    <VideoView
-        android:id="@+id/videov"
-        android:layout_width="405dp"
-        android:layout_height="610dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.991" />
-
     <Button
         android:id="@+id/btnAtras"
         android:layout_width="87dp"
         android:layout_height="58dp"
         android:onClick="regresar"
         android:text="BACK"
-        app:layout_constraintBottom_toTopOf="@+id/videov"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <WebView
+        android:id="@+id/webv"
+        android:layout_width="362dp"
+        android:layout_height="352dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintVertical_bias="0.44" />
 </androidx.constraintlayout.widget.ConstraintLayout>
